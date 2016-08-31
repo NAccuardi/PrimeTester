@@ -22,7 +22,7 @@ public class PrimeTester {
             if (n % i == 0) return false;
         return true;
 
-
+        //prime math found at: http://stackoverflow.com/questions/20798391/java-isprime-function
 
 
     }
