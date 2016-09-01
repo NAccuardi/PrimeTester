@@ -8,6 +8,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.util.Log;
+
+
+
 
 
 public class PrimeTesterActivity extends ActionBarActivity {

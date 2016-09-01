@@ -1,5 +1,5 @@
 package edu.up.cs371.primetester;
-
+import android.util.Log;
 /**
  * Created by vegdahl on 7/17/2015.
  *
@@ -14,13 +14,24 @@ public class PrimeTester {
      * @return true iff n is prime
      */
     public static boolean isPrime(long n) {
-        // for now, return a random result
+
+
         if (n < 2) return false;
         if (n == 2) return true;
         if (n % 2 == 0) return false;
         for (int i = 3; i * i <= n; i += 2)
-            if (n % i == 0) return false;
-        return true;
+
+
+
+            if (n % i == 0)
+            {
+                Log.i("isPrime", ""+i) ;
+                return false;
+            }
+
+            return true;
+
+
 
         //prime math found at: http://stackoverflow.com/questions/20798391/java-isprime-function
 
